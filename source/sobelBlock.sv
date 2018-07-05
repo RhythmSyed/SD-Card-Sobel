@@ -1,0 +1,99 @@
+// $Id: $
+// File name:   sobelBlock.sv
+// Created:     4/10/2018
+// Author:      Muhtadyuzzaman Syed
+// Lab Section: 337-02
+// Version:     1.0  Initial Design Entry
+// Description: Sobel Edge Detection Block for Final Project.
+
+module sobelBlock
+(
+	input wire clk,
+	input wire n_rst,
+	input wire [71:0] image_buffer,
+	input wire enable,
+	output reg [7:0] new_pixel,
+	output reg done
+
+);
+
+reg [7:0] pixel_1, pixel_2, pixel_3, pixel_4, pixel_5, pixel_6, pixel_7, pixel_8, pixel_9;
+
+
+assign pixel_1 = image_buffer[7:0];
+assign pixel_2 = image_buffer[15:8];
+assign pixel_3 = image_buffer[23:16];
+assign pixel_4 = image_buffer[31:24];
+assign pixel_5 = image_buffer[39:32];
+assign pixel_6 = image_buffer[47:40];
+assign pixel_7 = image_buffer[55:48];
+assign pixel_8 = image_buffer[63:56];
+assign pixel_9 = image_buffer[71:64];
+
+reg signed [10:0] Gx;
+reg signed [10:0] Gy;
+
+reg [15:0] f;
+reg [7:0] temp_new_pixel;
+reg temp_done;
+integer a;
+
+
+always_ff @ (posedge clk, negedge n_rst)
+begin
+	if (n_rst == 1'b0)
+	begin
+		new_pixel <= 1'b0;
+	end
+	else if (n_rst == 1'b1)
+	begin
+		new_pixel <= temp_new_pixel;
+		done <= temp_done;
+	end
+end
+
+always_comb
+begin	
+	if (enable == 1)
+	begin
+		Gx = (pixel_7 + (2 * pixel_8) + pixel_9) - (pixel_1 + (2 * pixel_2) + pixel_3);
+		Gy = (pixel_3 + (2 * pixel_6) + pixel_9) - (pixel_1 + (2 * pixel_4) + pixel_7);
+		f = (Gx * Gx) + (Gy * Gy);
+		
+		if (f >= 16'd65025)
+		begin
+			temp_new_pixel = 8'd255;
+		end
+		else if (f < 16'd65025)	
+		begin
+			for (a=0; a<255; a=a + 1)
+			begin
+				if (f >= (a*a) && f < (a+1)*(a+1))
+				begin
+					temp_new_pixel = a;
+				end
+			end
+
+		end
+		
+		//temp_new_pixel = $sqrt(f);
+		temp_done = 1'b1;
+	end
+	else
+		temp_done = 1'b0;
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule

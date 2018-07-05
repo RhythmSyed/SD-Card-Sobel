@@ -1,0 +1,57 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/mg57/ece337/project/source
+vpos_edge_detector
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1524111562
+!i10b 1
+!s100 `Y7E`3DXRV4AQK8<;_@7?2
+IG`NB?b7COY2V<jQ@jI`2P0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 pos_edge_detector_sv_unit
+S1
+R0
+w1524111560
+8pos_edge_detector.sv
+Fpos_edge_detector.sv
+L0 9
+Z3 OL;L;10.3b;59
+r1
+!s85 0
+31
+!s108 1524111562.445567
+!s107 pos_edge_detector.sv|
+!s90 -reportprogress|300|pos_edge_detector.sv|
+!i113 0
+Z4 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vSD_Card_Interface
+R1
+!s110 1524120989
+!i10b 1
+!s100 D=c5hiD_1=l6zO`d>?63P3
+In^FBB2^SWSZI:[mo_B_4i2
+R2
+!s105 SD_Card_Interface_sv_unit
+S1
+R0
+w1524120987
+8SD_Card_Interface.sv
+FSD_Card_Interface.sv
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1524120989.507015
+!s107 SD_Card_Interface.sv|
+!s90 -reportprogress|300|SD_Card_Interface.sv|
+!i113 0
+R4
+n@s@d_@card_@interface

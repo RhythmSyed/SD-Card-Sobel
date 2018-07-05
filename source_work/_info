@@ -1,0 +1,158 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/mg44/ece337/project
+T_opt
+!s110 1524327905
+V43@]Z>RlSd795[@cBZ=^f1
+Z1 04 13 4 work tb_sobelBlock fast 0
+=1-3417ebaebb0d-5adb65e0-edd0b-752b
+Z2 o-quiet -auto_acc_if_foreign -work source_work/ -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim +acc
+n@_opt
+Z3 OL;O;10.3b;59
+R0
+T_opt1
+!s110 1524528943
+V7bYU>Mj9hb1YVC3a[JmH43
+04 14 4 work tb_sobel_image fast 0
+=1-3417ebaeb8ed-5ade772e-d281d-3cff
+o-quiet -auto_acc_if_foreign -work source_work -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim +acc
+n@_opt1
+R3
+T_opt2
+!s110 1524518743
+VWVShEIDQ82XCHkNl?@Nf?2
+R1
+=1-3417ebaeb8ed-5ade4f57-d833-25ab
+R2
+n@_opt2
+R3
+R0
+vflex_counter
+Z4 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1524519313
+!i10b 1
+!s100 kQ4b[=gDX?ROVI14IzB?S1
+I17F8bGQfoOKPnUJRJOJ8c2
+Z5 V`JN@9S9cnhjKRR_L]QIcM3
+!s105 flex_counter_sv_unit
+S1
+R0
+w1523732717
+8source/flex_counter.sv
+Fsource/flex_counter.sv
+L0 9
+Z6 OL;L;10.3b;59
+r1
+!s85 0
+31
+!s108 1524519313.296139
+!s107 source/flex_counter.sv|
+!s90 -sv|-work|source_work|source/flex_counter.sv|
+!i113 0
+Z7 o-sv -work source_work
+Z8 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+vimage_receiver
+R4
+!s110 1524519289
+!i10b 1
+!s100 WLGMnz8hj0bj>Xc?i;SdG3
+IIQ[>_5DZD9U1KSmQ:mH]I3
+R5
+!s105 image_receiver_sv_unit
+S1
+R0
+w1524511800
+8source/image_receiver.sv
+Fsource/image_receiver.sv
+Z9 L0 11
+R6
+r1
+!s85 0
+31
+!s108 1524519289.570286
+!s107 source/image_receiver.sv|
+!s90 -sv|-work|source_work|source/image_receiver.sv|
+!i113 0
+R7
+R8
+vsobelBlock
+R4
+!s110 1524518702
+!i10b 1
+!s100 Z1VJL9d3Njnb3V:L[YdOK0
+I2z3>VjZcOHdDmhShoWAGM2
+R5
+!s105 sobelBlock_sv_unit
+S1
+R0
+w1524513700
+8source/sobelBlock.sv
+Fsource/sobelBlock.sv
+L0 9
+R6
+r1
+!s85 0
+31
+!s108 1524518702.271091
+!s107 source/sobelBlock.sv|
+!s90 -sv|-work|source_work|source/sobelBlock.sv|
+!i113 0
+R7
+R8
+nsobel@block
+vtb_sobel_image
+R4
+!s110 1524528938
+!i10b 1
+!s100 S9^cM<lk?;kjH8f`6[54K0
+IMii?l]NLQeOdL7cb^CTCF1
+R5
+!s105 tb_sobel_image_sv_unit
+S1
+R0
+w1524528930
+8source/tb_sobel_image.sv
+Fsource/tb_sobel_image.sv
+R9
+R6
+r1
+!s85 0
+31
+!s108 1524528938.126054
+!s107 source/tb_sobel_image.sv|
+!s90 -sv|-work|source_work|source/tb_sobel_image.sv|
+!i113 0
+R7
+R8
+vtb_sobelBlock
+R4
+!s110 1524513164
+!i10b 1
+!s100 Q6LUnED9PSTf_583<HjoT3
+IB`Ee:gP[lfdY3V<3Yk:e?1
+R5
+!s105 tb_sobelBlock_sv_unit
+S1
+R0
+w1524512380
+8source/tb_sobelBlock.sv
+Fsource/tb_sobelBlock.sv
+R9
+R6
+r1
+!s85 0
+31
+!s108 1524513164.387256
+!s107 source/tb_sobelBlock.sv|
+!s90 -sv|-work|source_work|source/tb_sobelBlock.sv|
+!i113 0
+R7
+R8
+ntb_sobel@block

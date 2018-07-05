@@ -1,0 +1,166 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vlog pos_edge_detector.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:18:08 on Apr 19,2018
+# vlog -reportprogress 300 pos_edge_detector.sv 
+# ** Error: (vlog-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# ** Error: Library work not found.
+# ** Error: Verilog Compiler exiting
+# End time: 00:18:08 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlib work
+vlog pos_edge_detector.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:18:27 on Apr 19,2018
+# vlog -reportprogress 300 pos_edge_detector.sv 
+# -- Compiling module pos_edge_detector
+# ** Error: pos_edge_detector.sv(19): near "end": syntax error, unexpected end
+# End time: 00:18:27 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog pos_edge_detector.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:18:53 on Apr 19,2018
+# vlog -reportprogress 300 pos_edge_detector.sv 
+# -- Compiling module pos_edge_detector
+# ** Error: pos_edge_detector.sv(21): (vlog-2730) Undefined variable: 'cmd_delay'.
+# End time: 00:18:53 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog pos_edge_detector.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:19:22 on Apr 19,2018
+# vlog -reportprogress 300 pos_edge_detector.sv 
+# -- Compiling module pos_edge_detector
+# 
+# Top level modules:
+# 	pos_edge_detector
+# End time: 00:19:22 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog SD_Card_Interface.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:21:56 on Apr 19,2018
+# vlog -reportprogress 300 SD_Card_Interface.sv 
+# -- Compiling module SD_Card_Interface
+# 
+# Top level modules:
+# 	SD_Card_Interface
+# End time: 00:21:56 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog SD_Card_Interface.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:55:49 on Apr 19,2018
+# vlog -reportprogress 300 SD_Card_Interface.sv 
+# -- Compiling module SD_Card_Interface
+# 
+# Top level modules:
+# 	SD_Card_Interface
+# End time: 00:55:49 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog SD_Card_Interface.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:55:57 on Apr 19,2018
+# vlog -reportprogress 300 SD_Card_Interface.sv 
+# -- Compiling module SD_Card_Interface
+# ** Error: SD_Card_Interface.sv(47): 'cmd0' already declared in this scope.
+# ** Error: SD_Card_Interface.sv(48): 'cmd1' already declared in this scope.
+# ** Error: SD_Card_Interface.sv(49): 'cmd2' already declared in this scope.
+# ** Error: SD_Card_Interface.sv(50): 'cmd3' already declared in this scope.
+# ** Error: SD_Card_Interface.sv(51): 'cmd7' already declared in this scope.
+# ** Error: SD_Card_Interface.sv(52): 'cmd8' already declared in this scope.
+# ** Error: SD_Card_Interface.sv(53): 'read' already declared in this scope.
+# ** Error: SD_Card_Interface.sv(54): 'write' already declared in this scope.
+# ** Error: SD_Card_Interface.sv(55): 'acmd41' already declared in this scope.
+# ** Error: SD_Card_Interface.sv(58): near "=": syntax error, unexpected '=', expecting '('
+# End time: 00:55:57 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog SD_Card_Interface.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:56:33 on Apr 19,2018
+# vlog -reportprogress 300 SD_Card_Interface.sv 
+# -- Compiling module SD_Card_Interface
+# ** Error: SD_Card_Interface.sv(58): near "=": syntax error, unexpected '=', expecting '('
+# End time: 00:56:33 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog SD_Card_Interface.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:58:17 on Apr 19,2018
+# vlog -reportprogress 300 SD_Card_Interface.sv 
+# -- Compiling module SD_Card_Interface
+# ** Error: SD_Card_Interface.sv(58): near "=": syntax error, unexpected '=', expecting '('
+# End time: 00:58:17 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog SD_Card_Interface.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:58:40 on Apr 19,2018
+# vlog -reportprogress 300 SD_Card_Interface.sv 
+# -- Compiling module SD_Card_Interface
+# ** Error: SD_Card_Interface.sv(59): near "if": syntax error, unexpected if
+# End time: 00:58:40 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog SD_Card_Interface.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:59:34 on Apr 19,2018
+# vlog -reportprogress 300 SD_Card_Interface.sv 
+# -- Compiling module SD_Card_Interface
+# 
+# Top level modules:
+# 	SD_Card_Interface
+# End time: 00:59:34 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog SD_Card_Interface.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 00:59:50 on Apr 19,2018
+# vlog -reportprogress 300 SD_Card_Interface.sv 
+# -- Compiling module SD_Card_Interface
+# 
+# Top level modules:
+# 	SD_Card_Interface
+# End time: 00:59:50 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog SD_Card_Interface.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:12:06 on Apr 19,2018
+# vlog -reportprogress 300 SD_Card_Interface.sv 
+# -- Compiling module SD_Card_Interface
+# ** Error: SD_Card_Interface.sv(49): near "pos_edge_detector": syntax error, unexpected IDENTIFIER, expecting ';' or ','
+# ** Error: SD_Card_Interface.sv(98): near "end": syntax error, unexpected end, expecting ';'
+# End time: 02:12:06 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog SD_Card_Interface.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:56:07 on Apr 19,2018
+# vlog -reportprogress 300 SD_Card_Interface.sv 
+# -- Compiling module SD_Card_Interface
+# ** Error: SD_Card_Interface.sv(99): near "end": syntax error, unexpected end, expecting ';'
+# ** Error: SD_Card_Interface.sv(107): near "else": syntax error, unexpected else
+# ** Error: SD_Card_Interface.sv(115): near "end": syntax error, unexpected end
+# End time: 02:56:08 on Apr 19,2018, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+# /package/eda/mg/questa10.3b/questasim/linux_x86_64/vlog failed.
+vlog SD_Card_Interface.sv
+# QuestaSim-64 vlog 10.3b Compiler 2014.05 May 29 2014
+# Start time: 02:56:29 on Apr 19,2018
+# vlog -reportprogress 300 SD_Card_Interface.sv 
+# -- Compiling module SD_Card_Interface
+# 
+# Top level modules:
+# 	SD_Card_Interface
+# End time: 02:56:29 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

@@ -1,0 +1,749 @@
+Synthesizing design: sobelBlock.sv
+dc_shell-t -x "source -echo do_mapping.tcl"
+                                        
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+                                        
+               Version K-2015.06-SP1 for linux64 - Jul 21, 2015 
+                                        
+                    Copyright (c) 1988 - 2015 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/ecegrid/a/mg44/.synopsys_dv_prefs.tcl
+# Step 1:  Read in the source file
+analyze -format sverilog -lib WORK { sobelBlock.sv}
+Running PRESTO HDLC
+Compiling source file ./source/sobelBlock.sv
+Presto compilation completed successfully.
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/dw_foundation.sldb'
+elaborate sobelBlock -lib WORK
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/gtech.db'
+Loading db file '/package/eda/synopsys/syn-K-2015.06-SP1/libraries/syn/standard.sldb'
+  Loading link library 'osu05_stdcells'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ./source/sobelBlock.sv:59: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./source/sobelBlock.sv:60: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./source/sobelBlock.sv:61: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./source/sobelBlock.sv:73: signed to unsigned assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine sobelBlock line 42 in file
+		'./source/sobelBlock.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      done_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    new_pixel_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine sobelBlock line 55 in file
+		'./source/sobelBlock.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+| temp_new_pixel_reg  | Latch |   8   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Warning:  ./source/sobelBlock.sv:55: Netlist for always_comb block contains a latch. (ELAB-974)
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'sobelBlock'.
+uniquify
+# Step 2: Set design constraints
+# Uncomment below to set timing, area, power, etc. constraints
+# set_max_delay <delay> -from "<input>" -to "<output>"
+# set_max_area <area>
+# set_max_total_power <power> mW
+# Step 3: Compile the design
+compile -map_effort medium
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | K-2015.06-DWBB_201506.1 |     *     |
+| Licensed DW Building Blocks        | K-2015.06-DWBB_201506.1 |     *     |
+============================================================================
+
+
+Information: There are 9 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'sobelBlock'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Design 'sobelBlock' has no optimization constraints set. (OPT-108)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'sobelBlock_DW01_cmp2_0'
+  Processing 'sobelBlock_DW01_cmp2_1'
+  Processing 'sobelBlock_DW01_cmp2_2'
+  Processing 'sobelBlock_DW01_cmp2_3'
+  Processing 'sobelBlock_DW01_cmp2_4'
+  Processing 'sobelBlock_DW01_cmp2_5'
+  Processing 'sobelBlock_DW01_cmp2_6'
+  Processing 'sobelBlock_DW01_cmp2_7'
+  Processing 'sobelBlock_DW01_cmp2_8'
+  Processing 'sobelBlock_DW01_cmp2_9'
+  Processing 'sobelBlock_DW01_cmp2_10'
+  Processing 'sobelBlock_DW01_cmp2_11'
+  Processing 'sobelBlock_DW01_cmp2_12'
+  Processing 'sobelBlock_DW01_cmp2_13'
+  Processing 'sobelBlock_DW01_cmp2_14'
+  Processing 'sobelBlock_DW01_cmp2_15'
+  Processing 'sobelBlock_DW01_cmp2_16'
+  Processing 'sobelBlock_DW01_cmp2_17'
+  Processing 'sobelBlock_DW01_cmp2_18'
+  Processing 'sobelBlock_DW01_cmp2_19'
+  Processing 'sobelBlock_DW01_cmp2_20'
+  Processing 'sobelBlock_DW01_cmp2_21'
+  Processing 'sobelBlock_DW01_cmp2_22'
+  Processing 'sobelBlock_DW01_cmp2_23'
+  Processing 'sobelBlock_DW01_cmp2_24'
+  Processing 'sobelBlock_DW01_cmp2_25'
+  Processing 'sobelBlock_DW01_cmp2_26'
+  Processing 'sobelBlock_DW01_cmp2_27'
+  Processing 'sobelBlock_DW01_cmp2_28'
+  Processing 'sobelBlock_DW01_cmp2_29'
+  Processing 'sobelBlock_DW01_cmp2_30'
+  Processing 'sobelBlock_DW01_cmp2_31'
+  Processing 'sobelBlock_DW01_cmp2_32'
+  Processing 'sobelBlock_DW01_cmp2_33'
+  Processing 'sobelBlock_DW01_cmp2_34'
+  Processing 'sobelBlock_DW01_cmp2_35'
+  Processing 'sobelBlock_DW01_cmp2_36'
+  Processing 'sobelBlock_DW01_cmp2_37'
+  Processing 'sobelBlock_DW01_cmp2_38'
+  Processing 'sobelBlock_DW01_cmp2_39'
+  Processing 'sobelBlock_DW01_cmp2_40'
+  Processing 'sobelBlock_DW01_cmp2_41'
+  Processing 'sobelBlock_DW01_cmp2_42'
+  Processing 'sobelBlock_DW01_cmp2_43'
+  Processing 'sobelBlock_DW01_cmp2_44'
+  Processing 'sobelBlock_DW01_cmp2_45'
+  Processing 'sobelBlock_DW01_cmp2_46'
+  Processing 'sobelBlock_DW01_cmp2_47'
+  Processing 'sobelBlock_DW01_cmp2_48'
+  Processing 'sobelBlock_DW01_cmp2_49'
+  Processing 'sobelBlock_DW01_cmp2_50'
+  Processing 'sobelBlock_DW01_cmp2_51'
+  Processing 'sobelBlock_DW01_cmp2_52'
+  Processing 'sobelBlock_DW01_cmp2_53'
+  Processing 'sobelBlock_DW01_cmp2_54'
+  Processing 'sobelBlock_DW01_cmp2_55'
+  Processing 'sobelBlock_DW01_cmp2_56'
+  Processing 'sobelBlock_DW01_cmp2_57'
+  Processing 'sobelBlock_DW01_cmp2_58'
+  Processing 'sobelBlock_DW01_cmp2_59'
+  Processing 'sobelBlock_DW01_cmp2_60'
+  Processing 'sobelBlock_DW01_cmp2_61'
+  Processing 'sobelBlock_DW01_cmp2_62'
+  Processing 'sobelBlock_DW01_cmp2_63'
+  Processing 'sobelBlock_DW01_cmp2_64'
+  Processing 'sobelBlock_DW01_cmp2_65'
+  Processing 'sobelBlock_DW01_cmp2_66'
+  Processing 'sobelBlock_DW01_cmp2_67'
+  Processing 'sobelBlock_DW01_cmp2_68'
+  Processing 'sobelBlock_DW01_cmp2_69'
+  Processing 'sobelBlock_DW01_cmp2_70'
+  Processing 'sobelBlock_DW01_cmp2_71'
+  Processing 'sobelBlock_DW01_cmp2_72'
+  Processing 'sobelBlock_DW01_cmp2_73'
+  Processing 'sobelBlock_DW01_cmp2_74'
+  Processing 'sobelBlock_DW01_cmp2_75'
+  Processing 'sobelBlock_DW01_cmp2_76'
+  Processing 'sobelBlock_DW01_cmp2_77'
+  Processing 'sobelBlock_DW01_cmp2_78'
+  Processing 'sobelBlock_DW01_cmp2_79'
+  Processing 'sobelBlock_DW01_cmp2_80'
+  Processing 'sobelBlock_DW01_cmp2_81'
+  Processing 'sobelBlock_DW01_cmp2_82'
+  Processing 'sobelBlock_DW01_cmp2_83'
+  Processing 'sobelBlock_DW01_cmp2_84'
+  Processing 'sobelBlock_DW01_cmp2_85'
+  Processing 'sobelBlock_DW01_cmp2_86'
+  Processing 'sobelBlock_DW01_cmp2_87'
+  Processing 'sobelBlock_DW01_cmp2_88'
+  Processing 'sobelBlock_DW01_cmp2_89'
+  Processing 'sobelBlock_DW01_cmp2_90'
+  Processing 'sobelBlock_DW01_cmp2_91'
+  Processing 'sobelBlock_DW01_cmp2_92'
+  Processing 'sobelBlock_DW01_cmp2_93'
+  Processing 'sobelBlock_DW01_cmp2_94'
+  Processing 'sobelBlock_DW01_cmp2_95'
+  Processing 'sobelBlock_DW01_cmp2_96'
+  Processing 'sobelBlock_DW01_cmp2_97'
+  Processing 'sobelBlock_DW01_cmp2_98'
+  Processing 'sobelBlock_DW01_cmp2_99'
+  Processing 'sobelBlock_DW01_cmp2_100'
+  Processing 'sobelBlock_DW01_cmp2_101'
+  Processing 'sobelBlock_DW01_cmp2_102'
+  Processing 'sobelBlock_DW01_cmp2_103'
+  Processing 'sobelBlock_DW01_cmp2_104'
+  Processing 'sobelBlock_DW01_cmp2_105'
+  Processing 'sobelBlock_DW01_cmp2_106'
+  Processing 'sobelBlock_DW01_cmp2_107'
+  Processing 'sobelBlock_DW01_cmp2_108'
+  Processing 'sobelBlock_DW01_cmp2_109'
+  Processing 'sobelBlock_DW01_cmp2_110'
+  Processing 'sobelBlock_DW01_cmp2_111'
+  Processing 'sobelBlock_DW01_cmp2_112'
+  Processing 'sobelBlock_DW01_cmp2_113'
+  Processing 'sobelBlock_DW01_cmp2_114'
+  Processing 'sobelBlock_DW01_cmp2_115'
+  Processing 'sobelBlock_DW01_cmp2_116'
+  Processing 'sobelBlock_DW01_cmp2_117'
+  Processing 'sobelBlock_DW01_cmp2_118'
+  Processing 'sobelBlock_DW01_cmp2_119'
+  Processing 'sobelBlock_DW01_cmp2_120'
+  Processing 'sobelBlock_DW01_cmp2_121'
+  Processing 'sobelBlock_DW01_cmp2_122'
+  Processing 'sobelBlock_DW01_cmp2_123'
+  Processing 'sobelBlock_DW01_cmp2_124'
+  Processing 'sobelBlock_DW01_cmp2_125'
+  Processing 'sobelBlock_DW01_cmp2_126'
+  Processing 'sobelBlock_DW01_cmp2_127'
+  Processing 'sobelBlock_DW01_cmp2_128'
+  Processing 'sobelBlock_DW01_cmp2_129'
+  Processing 'sobelBlock_DW01_cmp2_130'
+  Processing 'sobelBlock_DW01_cmp2_131'
+  Processing 'sobelBlock_DW01_cmp2_132'
+  Processing 'sobelBlock_DW01_cmp2_133'
+  Processing 'sobelBlock_DW01_cmp2_134'
+  Processing 'sobelBlock_DW01_cmp2_135'
+  Processing 'sobelBlock_DW01_cmp2_136'
+  Processing 'sobelBlock_DW01_cmp2_137'
+  Processing 'sobelBlock_DW01_cmp2_138'
+  Processing 'sobelBlock_DW01_cmp2_139'
+  Processing 'sobelBlock_DW01_cmp2_140'
+  Processing 'sobelBlock_DW01_cmp2_141'
+  Processing 'sobelBlock_DW01_cmp2_142'
+  Processing 'sobelBlock_DW01_cmp2_143'
+  Processing 'sobelBlock_DW01_cmp2_144'
+  Processing 'sobelBlock_DW01_cmp2_145'
+  Processing 'sobelBlock_DW01_cmp2_146'
+  Processing 'sobelBlock_DW01_cmp2_147'
+  Processing 'sobelBlock_DW01_cmp2_148'
+  Processing 'sobelBlock_DW01_cmp2_149'
+  Processing 'sobelBlock_DW01_cmp2_150'
+  Processing 'sobelBlock_DW01_cmp2_151'
+  Processing 'sobelBlock_DW01_cmp2_152'
+  Processing 'sobelBlock_DW01_cmp2_153'
+  Processing 'sobelBlock_DW01_cmp2_154'
+  Processing 'sobelBlock_DW01_cmp2_155'
+  Processing 'sobelBlock_DW01_cmp2_156'
+  Processing 'sobelBlock_DW01_cmp2_157'
+  Processing 'sobelBlock_DW01_cmp2_158'
+  Processing 'sobelBlock_DW01_cmp2_159'
+  Processing 'sobelBlock_DW01_cmp2_160'
+  Processing 'sobelBlock_DW01_cmp2_161'
+  Processing 'sobelBlock_DW01_cmp2_162'
+  Processing 'sobelBlock_DW01_cmp2_163'
+  Processing 'sobelBlock_DW01_cmp2_164'
+  Processing 'sobelBlock_DW01_cmp2_165'
+  Processing 'sobelBlock_DW01_cmp2_166'
+  Processing 'sobelBlock_DW01_cmp2_167'
+  Processing 'sobelBlock_DW01_cmp2_168'
+  Processing 'sobelBlock_DW01_cmp2_169'
+  Processing 'sobelBlock_DW01_cmp2_170'
+  Processing 'sobelBlock_DW01_cmp2_171'
+  Processing 'sobelBlock_DW01_cmp2_172'
+  Processing 'sobelBlock_DW01_cmp2_173'
+  Processing 'sobelBlock_DW01_cmp2_174'
+  Processing 'sobelBlock_DW01_cmp2_175'
+  Processing 'sobelBlock_DW01_cmp2_176'
+  Processing 'sobelBlock_DW01_cmp2_177'
+  Processing 'sobelBlock_DW01_cmp2_178'
+  Processing 'sobelBlock_DW01_cmp2_179'
+  Processing 'sobelBlock_DW01_cmp2_180'
+  Processing 'sobelBlock_DW01_cmp2_181'
+  Processing 'sobelBlock_DW01_cmp2_182'
+  Processing 'sobelBlock_DW01_cmp2_183'
+  Processing 'sobelBlock_DW01_cmp2_184'
+  Processing 'sobelBlock_DW01_cmp2_185'
+  Processing 'sobelBlock_DW01_cmp2_186'
+  Processing 'sobelBlock_DW01_cmp2_187'
+  Processing 'sobelBlock_DW01_cmp2_188'
+  Processing 'sobelBlock_DW01_cmp2_189'
+  Processing 'sobelBlock_DW01_cmp2_190'
+  Processing 'sobelBlock_DW01_cmp2_191'
+  Processing 'sobelBlock_DW01_cmp2_192'
+  Processing 'sobelBlock_DW01_cmp2_193'
+  Processing 'sobelBlock_DW01_cmp2_194'
+  Processing 'sobelBlock_DW01_cmp2_195'
+  Processing 'sobelBlock_DW01_cmp2_196'
+  Processing 'sobelBlock_DW01_cmp2_197'
+  Processing 'sobelBlock_DW01_cmp2_198'
+  Processing 'sobelBlock_DW01_cmp2_199'
+  Processing 'sobelBlock_DW01_cmp2_200'
+  Processing 'sobelBlock_DW01_cmp2_201'
+  Processing 'sobelBlock_DW01_cmp2_202'
+  Processing 'sobelBlock_DW01_cmp2_203'
+  Processing 'sobelBlock_DW01_cmp2_204'
+  Processing 'sobelBlock_DW01_cmp2_205'
+  Processing 'sobelBlock_DW01_cmp2_206'
+  Processing 'sobelBlock_DW01_cmp2_207'
+  Processing 'sobelBlock_DW01_cmp2_208'
+  Processing 'sobelBlock_DW01_cmp2_209'
+  Processing 'sobelBlock_DW01_cmp2_210'
+  Processing 'sobelBlock_DW01_cmp2_211'
+  Processing 'sobelBlock_DW01_cmp2_212'
+  Processing 'sobelBlock_DW01_cmp2_213'
+  Processing 'sobelBlock_DW01_cmp2_214'
+  Processing 'sobelBlock_DW01_cmp2_215'
+  Processing 'sobelBlock_DW01_cmp2_216'
+  Processing 'sobelBlock_DW01_cmp2_217'
+  Processing 'sobelBlock_DW01_cmp2_218'
+  Processing 'sobelBlock_DW01_cmp2_219'
+  Processing 'sobelBlock_DW01_cmp2_220'
+  Processing 'sobelBlock_DW01_cmp2_221'
+  Processing 'sobelBlock_DW01_cmp2_222'
+  Processing 'sobelBlock_DW01_cmp2_223'
+  Processing 'sobelBlock_DW01_cmp2_224'
+  Processing 'sobelBlock_DW01_cmp2_225'
+  Processing 'sobelBlock_DW01_cmp2_226'
+  Processing 'sobelBlock_DW01_cmp2_227'
+  Processing 'sobelBlock_DW01_cmp2_228'
+  Processing 'sobelBlock_DW01_cmp2_229'
+  Processing 'sobelBlock_DW01_cmp2_230'
+  Processing 'sobelBlock_DW01_cmp2_231'
+  Processing 'sobelBlock_DW01_cmp2_232'
+  Processing 'sobelBlock_DW01_cmp2_233'
+  Processing 'sobelBlock_DW01_cmp2_234'
+  Processing 'sobelBlock_DW01_cmp2_235'
+  Processing 'sobelBlock_DW01_cmp2_236'
+  Processing 'sobelBlock_DW01_cmp2_237'
+  Processing 'sobelBlock_DW01_cmp2_238'
+  Processing 'sobelBlock_DW01_cmp2_239'
+  Processing 'sobelBlock_DW01_cmp2_240'
+  Processing 'sobelBlock_DW01_cmp2_241'
+  Processing 'sobelBlock_DW01_cmp2_242'
+  Processing 'sobelBlock_DW01_cmp2_243'
+  Processing 'sobelBlock_DW01_cmp2_244'
+  Processing 'sobelBlock_DW01_cmp2_245'
+  Processing 'sobelBlock_DW01_cmp2_246'
+  Processing 'sobelBlock_DW01_cmp2_247'
+  Processing 'sobelBlock_DW01_cmp2_248'
+  Processing 'sobelBlock_DW01_cmp2_249'
+  Processing 'sobelBlock_DW01_cmp2_250'
+  Processing 'sobelBlock_DW01_cmp2_251'
+  Processing 'sobelBlock_DW01_cmp2_252'
+  Processing 'sobelBlock_DW01_cmp2_253'
+  Processing 'sobelBlock_DW01_cmp2_254'
+  Processing 'sobelBlock_DW01_cmp2_255'
+  Processing 'sobelBlock_DW01_cmp2_256'
+  Processing 'sobelBlock_DW01_add_0'
+  Mapping 'sobelBlock_DW_mult_tc_0'
+  Processing 'sobelBlock_DW01_sub_0'
+  Processing 'sobelBlock_DW01_add_1'
+  Processing 'sobelBlock_DW01_add_2'
+  Processing 'sobelBlock_DW01_add_3'
+  Processing 'sobelBlock_DW01_add_4'
+  Mapping 'sobelBlock_DW_mult_tc_1'
+  Processing 'sobelBlock_DW01_sub_1'
+  Processing 'sobelBlock_DW01_add_5'
+  Processing 'sobelBlock_DW01_add_6'
+  Processing 'sobelBlock_DW01_add_7'
+  Processing 'sobelBlock_DW01_add_8'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Structuring 'sobelBlock'
+  Mapping 'sobelBlock'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:15  553527.0      0.00       0.0       2.2                          
+    0:00:15  553527.0      0.00       0.0       2.2                          
+    0:00:15  553527.0      0.00       0.0       2.2                          
+    0:00:15  553527.0      0.00       0.0       2.2                          
+    0:00:15  553527.0      0.00       0.0       2.2                          
+    0:00:15  551079.0      0.00       0.0       2.2                          
+    0:00:15  551079.0      0.00       0.0       2.2                          
+    0:00:15  551079.0      0.00       0.0       2.2                          
+    0:00:15  551079.0      0.00       0.0       2.2                          
+    0:00:15  551079.0      0.00       0.0       2.2                          
+    0:00:15  551079.0      0.00       0.0       1.9                          
+    0:00:16  551079.0      0.00       0.0       1.7                          
+    0:00:16  551079.0      0.00       0.0       1.6                          
+    0:00:16  551295.0      0.00       0.0       1.4                          
+    0:00:16  551295.0      0.00       0.0       1.4                          
+    0:00:16  551439.0      0.00       0.0       1.3                          
+    0:00:16  551439.0      0.00       0.0       1.3                          
+    0:00:16  551439.0      0.00       0.0       1.3                          
+    0:00:16  551439.0      0.00       0.0       1.3                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:16  551439.0      0.00       0.0       1.3                          
+    0:00:16  551439.0      0.00       0.0       1.3                          
+    0:00:16  551439.0      0.00       0.0       1.3                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:16  551439.0      0.00       0.0       1.3                          
+    0:00:16  553743.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:16  553743.0      0.00       0.0       0.0                          
+    0:00:16  553743.0      0.00       0.0       0.0                          
+    0:00:16  552447.0      0.00       0.0       0.0                          
+    0:00:16  551799.0      0.00       0.0       0.0                          
+    0:00:16  551655.0      0.00       0.0       0.0                          
+    0:00:16  551511.0      0.00       0.0       0.0                          
+    0:00:16  551511.0      0.00       0.0       0.0                          
+    0:00:16  551511.0      0.00       0.0       0.0                          
+    0:00:16  551511.0      0.00       0.0       0.0                          
+    0:00:16  551511.0      0.00       0.0       0.0                          
+    0:00:16  551511.0      0.00       0.0       0.0                          
+    0:00:16  551511.0      0.00       0.0       0.0                          
+    0:00:16  551511.0      0.00       0.0       0.0                          
+    0:00:16  551511.0      0.00       0.0       0.0                          
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+# Step 4: Output reports
+report_timing -path full -delay max -max_paths 1 -nworst 1 > reports/sobelBlock.rep
+report_area >> reports/sobelBlock.rep
+report_power -hier >> reports/sobelBlock.rep
+# Step 5: Output final VHDL and Verilog files
+write_file -format verilog -hierarchy -output "mapped/sobelBlock.v"
+Writing verilog file '/home/ecegrid/a/mg44/ece337/project/mapped/sobelBlock.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 14 nets to module sobelBlock using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+echo "\nScript Done\n"
+
+Script Done
+
+echo "\nChecking Design\n"
+
+Checking Design
+
+check_design
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP1
+Date:        Sat Apr 21 17:01:12 2018
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    106
+    Unconnected ports (LINT-28)                                   100
+    Feedthrough (LINT-29)                                           6
+
+Cells                                                              75
+    Connected to power or ground (LINT-32)                         45
+    Nets connected to multiple pins on same cell (LINT-33)         30
+--------------------------------------------------------------------------------
+
+Warning: In design 'sobelBlock', port 'image_buffer[39]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock', port 'image_buffer[38]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock', port 'image_buffer[37]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock', port 'image_buffer[36]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock', port 'image_buffer[35]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock', port 'image_buffer[34]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock', port 'image_buffer[33]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock', port 'image_buffer[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_0', port 'A[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_0', port 'B[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_1', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_1', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_1', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_1', port 'B[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_2', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_2', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_2', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_2', port 'B[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_2', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_2', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_3', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_3', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_3', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_3', port 'B[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_3', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_3', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_4', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_4', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_4', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_4', port 'B[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_4', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_4', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_5', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_5', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_5', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_5', port 'B[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_5', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_5', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_6', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_6', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_6', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_6', port 'B[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_6', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_6', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_7', port 'A[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_7', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_7', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_7', port 'B[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_7', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_7', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_8', port 'A[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_8', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_8', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_8', port 'B[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_8', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_8', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'b[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'b[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'b[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'b[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'b[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'b[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'b[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'b[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'b[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'b[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'b[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'product[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'product[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'product[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'product[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'product[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'product[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_2', port 'product[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'b[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'b[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'b[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'b[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'b[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'b[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'b[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'b[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'b[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'b[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'b[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'product[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'product[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'product[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'product[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'product[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'product[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW_mult_tc_3', port 'product[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobelBlock_DW01_add_2', input port 'A[0]' is connected directly to output port 'SUM[0]'. (LINT-29)
+Warning: In design 'sobelBlock_DW01_add_4', input port 'A[0]' is connected directly to output port 'SUM[0]'. (LINT-29)
+Warning: In design 'sobelBlock_DW01_add_6', input port 'A[0]' is connected directly to output port 'SUM[0]'. (LINT-29)
+Warning: In design 'sobelBlock_DW01_add_8', input port 'A[0]' is connected directly to output port 'SUM[0]'. (LINT-29)
+Warning: In design 'sobelBlock_DW_mult_tc_2', input port 'a[0]' is connected directly to output port 'product[0]'. (LINT-29)
+Warning: In design 'sobelBlock_DW_mult_tc_3', input port 'a[0]' is connected directly to output port 'product[0]'. (LINT-29)
+Warning: In design 'sobelBlock', a pin on submodule 'add_61' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[1]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_61' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[1]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_61' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'sub_60' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_60_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_60_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_60_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_60_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[10]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_60_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_60_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_60_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_60_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_60_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[0]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_60_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_60_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_60_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_60_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_60_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[10]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_60_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_60_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_60_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_60_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_60_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[0]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_60_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'sub_59' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_59_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_59_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_59_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_59_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[10]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_59_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_59_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_59_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_59_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_59_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[0]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_59_4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_59_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[10]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_59_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_59_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_59_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[10]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_0_root_add_59_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_59_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_59_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_59_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_59_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[0]' is connected to logic 0. 
+Warning: In design 'sobelBlock', a pin on submodule 'add_1_root_add_59_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'add_0_root_add_60_4'. (LINT-33)
+   Net 'n262' is connected to pins 'A[10]', 'A[9]'', 'A[8]', 'B[10]', 'CI'.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'add_1_root_add_60_4'. (LINT-33)
+   Net 'n263' is connected to pins 'A[9]', 'A[8]'', 'B[9]', 'CI'.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'add_0_root_add_60_2'. (LINT-33)
+   Net 'n264' is connected to pins 'A[10]', 'A[9]'', 'A[8]', 'B[10]', 'CI'.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'add_1_root_add_60_2'. (LINT-33)
+   Net 'n265' is connected to pins 'A[9]', 'A[8]'', 'B[9]', 'CI'.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'add_0_root_add_59_4'. (LINT-33)
+   Net 'n267' is connected to pins 'A[10]', 'A[9]'', 'A[8]', 'B[10]', 'CI'.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'add_1_root_add_59_4'. (LINT-33)
+   Net 'n268' is connected to pins 'A[9]', 'A[8]'', 'B[9]', 'CI'.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'add_0_root_add_59_2'. (LINT-33)
+   Net 'n269' is connected to pins 'A[10]', 'A[9]'', 'A[8]', 'B[10]', 'CI'.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'add_1_root_add_59_2'. (LINT-33)
+   Net 'n270' is connected to pins 'A[9]', 'A[8]'', 'B[9]', 'CI'.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61'. (LINT-33)
+   Net 'N312' is connected to pins 'a[10]', 'b[10]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61'. (LINT-33)
+   Net 'N311' is connected to pins 'a[9]', 'b[9]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61'. (LINT-33)
+   Net 'N310' is connected to pins 'a[8]', 'b[8]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61'. (LINT-33)
+   Net 'N309' is connected to pins 'a[7]', 'b[7]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61'. (LINT-33)
+   Net 'N308' is connected to pins 'a[6]', 'b[6]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61'. (LINT-33)
+   Net 'N307' is connected to pins 'a[5]', 'b[5]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61'. (LINT-33)
+   Net 'N306' is connected to pins 'a[4]', 'b[4]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61'. (LINT-33)
+   Net 'N305' is connected to pins 'a[3]', 'b[3]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61'. (LINT-33)
+   Net 'N304' is connected to pins 'a[2]', 'b[2]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61'. (LINT-33)
+   Net 'N303' is connected to pins 'a[1]', 'b[1]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61'. (LINT-33)
+   Net 'N302' is connected to pins 'a[0]', 'b[0]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61_2'. (LINT-33)
+   Net 'N365' is connected to pins 'a[10]', 'b[10]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61_2'. (LINT-33)
+   Net 'N364' is connected to pins 'a[9]', 'b[9]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61_2'. (LINT-33)
+   Net 'N363' is connected to pins 'a[8]', 'b[8]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61_2'. (LINT-33)
+   Net 'N362' is connected to pins 'a[7]', 'b[7]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61_2'. (LINT-33)
+   Net 'N361' is connected to pins 'a[6]', 'b[6]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61_2'. (LINT-33)
+   Net 'N360' is connected to pins 'a[5]', 'b[5]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61_2'. (LINT-33)
+   Net 'N359' is connected to pins 'a[4]', 'b[4]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61_2'. (LINT-33)
+   Net 'N358' is connected to pins 'a[3]', 'b[3]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61_2'. (LINT-33)
+   Net 'N357' is connected to pins 'a[2]', 'b[2]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61_2'. (LINT-33)
+   Net 'N356' is connected to pins 'a[1]', 'b[1]''.
+Warning: In design 'sobelBlock', the same net is connected to more than one pin on submodule 'mult_61_2'. (LINT-33)
+   Net 'N355' is connected to pins 'a[0]', 'b[0]''.
+quit
+
+Thank you...
+Done
+
+

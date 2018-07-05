@@ -1,0 +1,165 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -voptargs="+acc" -i -t ps -do "source ./scripts/image_waves.do; run 240ms" source_work.tb_sobel_image 
+# Start time: 20:15:42 on Apr 23,2018
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_sobel_image(fast)
+# Loading work.sobelBlock(fast)
+# ** Warning: (vsim-3839) source/tb_sobel_image.sv(296): Variable '/tb_sobel_image/tb_done', driven via a port connection, is multiply driven. See source/tb_sobel_image.sv(105).
+#         Region: /tb_sobel_image
+# source ./scripts/image_waves.do
+# Missing or invalid install path
+# 
+#  run 240ms
+# Input bitmap file uses the BITMAPINFOHEADER type of DIB header
+# ** Info: signature '19778'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 141
+# ** Info: size of BMP file in bytes '3382'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 142
+# ** Info: reversed1 '0'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 143
+# ** Info: reversed2 '0'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 144
+# ** Info: offset '1078'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 145
+# ** Info: size of BITMAPINFOHEADER '40'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 146
+# ** Info: image width '48'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 147
+# ** Info: image height '48'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 148
+# ** Info: number of planes '1'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 149
+# ** Info: number of bits '8'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 150
+# ** Info: compression type '0'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 151
+# ** Info: size of image data in bytes '2304'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 152
+# ** Info: horizontal resolution '2835'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 153
+# ** Info: vertical resolution '2835'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 154
+# ** Info: number of colors in image '0'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 155
+# ** Info: number of important colors '0'
+#    Time: 1 ns  Scope: tb_sobel_image.read_input_header File: source/tb_sobel_image.sv Line: 156
+# ** Info: Storing header(0) '66'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(1) '77'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(2) '54'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(3) '13'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(4) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(5) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(6) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(7) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(8) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(9) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(10) '54'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(11) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(12) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(13) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 245
+# ** Info: Storing header(0) '40'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(1) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(2) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(3) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(4) '48'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(5) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(6) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(7) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(8) '48'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(9) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(10) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(11) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(12) '1'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(13) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(14) '8'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(15) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(16) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(17) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(18) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(19) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(20) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(21) '9'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(22) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(23) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(24) '19'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(25) '11'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(26) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(27) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(28) '19'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(29) '11'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(30) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(31) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(32) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(33) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(34) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(35) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(36) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(37) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(38) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# ** Info: Storing header(39) '0'
+#    Time: 1 ns  Scope: tb_sobel_image.generate_output_header File: source/tb_sobel_image.sv Line: 252
+# End time: 20:20:59 on Apr 23,2018, Elapsed time: 0:05:17
+# Errors: 1, Warnings: 1

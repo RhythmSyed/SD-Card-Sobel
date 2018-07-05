@@ -1,0 +1,393 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/mg44/ece337/project
+T_opt
+!s110 1524344480
+V2kkZ;@BMI<PFoD6<^8j`o1
+04 13 4 work tb_sobelBlock fast 0
+=1-3417ebaebb0d-5adba69f-df161-1832
+o-quiet -auto_acc_if_foreign -work mapped_work/ -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim +acc
+n@_opt
+OL;O;10.3b;59
+vsobelBlock
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z2 !s110 1524344475
+!i10b 1
+!s100 3`=f2^zDQNnf=LV>Nc2:l0
+I8LcDf1BOOei4>A1DJ`J4Z0
+Z3 V`JN@9S9cnhjKRR_L]QIcM3
+Z4 !s105 sobelBlock_v_unit
+S1
+R0
+Z5 w1524344472
+Z6 8mapped/sobelBlock.v
+Z7 Fmapped/sobelBlock.v
+L0 580
+Z8 OL;L;10.3b;59
+r1
+!s85 0
+31
+Z9 !s108 1524344475.133658
+Z10 !s107 mapped/sobelBlock.v|
+Z11 !s90 -sv|-work|mapped_work|mapped/sobelBlock.v|
+!i113 0
+Z12 o-sv -work mapped_work
+Z13 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+nsobel@block
+vsobelBlock_DW01_add_0
+R1
+R2
+!i10b 1
+!s100 fECU16W?zDhM><[3V80iF3
+I<KI`dH1HODoh]jfjI8=X:0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 8
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w01_add_0
+vsobelBlock_DW01_add_1
+R1
+R2
+!i10b 1
+!s100 7z8Em0KPIb6X[7Wl_jEQ32
+I43hO_:EdUbBiXCGiX3:zM0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 93
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w01_add_1
+vsobelBlock_DW01_add_2
+R1
+R2
+!i10b 1
+!s100 <8agb0bhBWCYhIJ8MIm_^3
+I?N;c]0El7g`MO6>j^J40`1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 118
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w01_add_2
+vsobelBlock_DW01_add_3
+R1
+R2
+!i10b 1
+!s100 Z8d5e]HlUKY;JX:mJ0PP`0
+IP32oM@oi>HcF`ehG=;Qj53
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 142
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w01_add_3
+vsobelBlock_DW01_add_4
+R1
+R2
+!i10b 1
+!s100 J=6gY5Pd;1Tha`W=SDR5c3
+Ik1[Hm1SEThdW`QzAA?faG1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 167
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w01_add_4
+vsobelBlock_DW01_add_5
+R1
+R2
+!i10b 1
+!s100 FJ;Z6Ia3DXXTU_nRZdS5^1
+I74z<h]QB<gJLEC78OEZ5M1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 226
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w01_add_5
+vsobelBlock_DW01_add_6
+R1
+R2
+!i10b 1
+!s100 S?haijJ]6Ff1R=D3G6a`e1
+I4Y0nn@ZkN4Za4AT5F:H:43
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 251
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w01_add_6
+vsobelBlock_DW01_add_7
+R1
+R2
+!i10b 1
+!s100 Q=YWYYe4Y^1`<;8KT?[`S3
+I8=b;jE2;b;BBzek>;@]JN0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 275
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w01_add_7
+vsobelBlock_DW01_add_8
+R1
+R2
+!i10b 1
+!s100 mo?W:IN2o=UR4B`K:IJZ33
+II9jaL07FZfiLV3e=HPz>E2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 300
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w01_add_8
+vsobelBlock_DW01_sub_0
+R1
+R2
+!i10b 1
+!s100 oZUQhe[gP03KE:2b9coSD1
+I7P?Geog;7gfVb3o3PHd_;2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 58
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w01_sub_0
+vsobelBlock_DW01_sub_1
+R1
+R2
+!i10b 1
+!s100 mn;lRXG_Eh;cECKTMmgm;1
+ITEZc9AXQm?aUSM`FaCC0@0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 191
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w01_sub_1
+vsobelBlock_DW_mult_tc_2
+R1
+R2
+!i10b 1
+!s100 M[R[g<3]Wk4ZZhJJXVlhO0
+Ie6^X@3`N=NJim3PmHPROK3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 324
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w_mult_tc_2
+vsobelBlock_DW_mult_tc_3
+R1
+R2
+!i10b 1
+!s100 S13678BQOdkU=mbmeZOF33
+IGoQ9hJm]M]GP:`GAQBz5R0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 452
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nsobel@block_@d@w_mult_tc_3
+vtb_sobelBlock
+R1
+R2
+!i10b 1
+!s100 WlgZDN`1V8FJ]P:0[XTCF2
+IM8KDILVjfWMNgHT9JdFV82
+R3
+!s105 tb_sobelBlock_sv_unit
+S1
+R0
+w1524344146
+8source/tb_sobelBlock.sv
+Fsource/tb_sobelBlock.sv
+L0 11
+R8
+r1
+!s85 0
+31
+!s108 1524344475.362598
+!s107 source/tb_sobelBlock.sv|
+!s90 -sv|-work|mapped_work|source/tb_sobelBlock.sv|
+!i113 0
+R12
+R13
+ntb_sobel@block

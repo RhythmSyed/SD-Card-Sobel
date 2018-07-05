@@ -1,0 +1,124 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sobelBlock
+Version: K-2015.06-SP1
+Date   : Sat Apr 21 17:01:11 2018
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: new_pixel_reg[7]
+              (rising edge-triggered flip-flop)
+  Endpoint: new_pixel[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  new_pixel_reg[7]/CLK (DFFSR)             0.00       0.00 r
+  new_pixel_reg[7]/Q (DFFSR)               0.49       0.49 f
+  new_pixel[7] (out)                       0.00       0.49 f
+  data arrival time                                   0.49
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : sobelBlock
+Version: K-2015.06-SP1
+Date   : Sat Apr 21 17:01:11 2018
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                          560
+Number of nets:                          2362
+Number of cells:                         1758
+Number of combinational cells:           1706
+Number of sequential cells:                39
+Number of macros/black boxes:               0
+Number of buf/inv:                        336
+Number of references:                      30
+
+Combinational area:             537975.000000
+Buf/Inv area:                    48456.000000
+Noncombinational area:           13536.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                551511.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : sobelBlock
+Version: K-2015.06-SP1
+Date   : Sat Apr 21 17:01:12 2018
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+sobelBlock                              860.388  643.421  167.059 1.50e+03 100.0
+  mult_61_2 (sobelBlock_DW_mult_tc_3)   113.316   82.263   18.742  195.579  13.0
+  mult_61 (sobelBlock_DW_mult_tc_2)     115.359   82.639   18.742  197.998  13.2
+  add_1_root_add_59_2 (sobelBlock_DW01_add_8)
+                                          4.370    3.817    2.781    8.186   0.5
+  add_0_root_add_59_2 (sobelBlock_DW01_add_7)
+                                          7.733    6.655    3.443   14.388   1.0
+  add_1_root_add_59_4 (sobelBlock_DW01_add_6)
+                                          4.374    3.820    2.781    8.195   0.5
+  add_0_root_add_59_4 (sobelBlock_DW01_add_5)
+                                          3.641    6.681    3.443   10.322   0.7
+  sub_59 (sobelBlock_DW01_sub_1)         16.240   13.949    4.266   30.189   2.0
+  add_1_root_add_60_2 (sobelBlock_DW01_add_4)
+                                          4.373    3.822    2.781    8.195   0.5
+  add_0_root_add_60_2 (sobelBlock_DW01_add_3)
+                                          7.721    6.645    3.443   14.366   1.0
+  add_1_root_add_60_4 (sobelBlock_DW01_add_2)
+                                          4.380    3.828    2.781    8.208   0.5
+  add_0_root_add_60_4 (sobelBlock_DW01_add_1)
+                                          3.661    6.716    3.443   10.376   0.7
+  sub_60 (sobelBlock_DW01_sub_0)         16.220   13.955    4.266   30.175   2.0
+  add_61 (sobelBlock_DW01_add_0)         77.276   29.827    5.841  107.103   7.1
+1
